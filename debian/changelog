@@ -1,5 +1,151 @@
-fonts-noto-cjk (1:20201206.1-deepin) stable; urgency=medium
+fonts-noto-cjk (1:20230817+repack1-3) unstable; urgency=medium
 
-  * ['Rebuild  against by  current gcc 11.2']
+  [ Boyuan Yang ]
+  * debian/changelog: fix typo.
+  * debian/control: Replace homepage: googlefonts -> notofonts.
 
- -- Deepin Packages Builder <packages@deepin.org>  Thu, 11 Aug 2022 21:47:32 +0800
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Tue, 05 Sep 2023 00:51:55 +0800
+
+fonts-noto-cjk (1:20230817+repack1-2) unstable; urgency=medium
+
+  * Fix upstream URL in d/README.source and d/watch. (Closes: #1050559)
+  * Remove Name in d/upstream/metadata.
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Tue, 05 Sep 2023 00:42:23 +0800
+
+fonts-noto-cjk (1:20230817+repack1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 4.6.2.
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Mon, 21 Aug 2023 01:02:36 +0800
+
+fonts-noto-cjk (1:20220127+repack1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 4.6.0.
+    * Copy LICENSE to /usr/share/doc/fonts-noto-cjk/copyright.
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Thu, 27 Jan 2022 23:48:49 +0800
+
+fonts-noto-cjk (1:20201206-cjk+repack1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 4.5.1.
+  * Bump compat to 13.
+  * Bump watch file to version=4.
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Sun, 20 Dec 2020 00:04:25 +0800
+
+fonts-noto-cjk (1:20190410+repack1-2) unstable; urgency=high
+
+  * Team upload.
+  * debian/70-fonts-noto-cjk.conf:
+    Weaken font selection under Chinese locale from "prepend_first"
+    to "prepend" with binding="strong" to prevent over-aggressive
+    font selection on Noto CJK fonts in modern web browsers.
+    (Closes: #907999)
+  * debian/control:
+    + Use debhelper-compat instead of debhelper as build-dep.
+    + Bump Standards-Version to 4.4.1.
+    + Use "Rules-Requires-Root: no".
+
+ -- Boyuan Yang <byang@debian.org>  Wed, 06 Nov 2019 19:15:10 -0500
+
+fonts-noto-cjk (1:20190410+repack1-1) unstable; urgency=medium
+
+  [ Hiroaki Nakamura ]
+  * New upstream release Noto Sans CJK V2.001 (Closes: #926753).
+
+  [ ChangZhuo Chen (陳昌倬) ]
+  * Merge back to unstable.
+  * Bump Standards-Version to 4.4.0
+  * Bump compat to 12
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Sat, 20 Jul 2019 16:33:29 +0800
+
+fonts-noto-cjk (1:20181130+repack1-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 4.3.0.
+  * Use HK fonts when lang is zh-hk.
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Sat, 02 Mar 2019 11:01:03 +0800
+
+fonts-noto-cjk (1:20170601+repack1-3) unstable; urgency=medium
+
+  [ Boyuan Yang ]
+  * 70-fonts-noto-cjk.conf: Increase font priority on Chinese systems
+    (Closes: #907048).
+
+  [ ChangZhuo Chen (陳昌倬) ]
+  * Bump Standards-Version to 4.2.0
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Tue, 28 Aug 2018 21:50:21 +0800
+
+fonts-noto-cjk (1:20170601+repack1-2) unstable; urgency=medium
+
+  [ Jeremy Bicha ]
+  * Move fontconfig template from /etc/fonts/ to /usr/share/fontconfig/
+
+  [ ChangZhuo Chen (陳昌倬) ]
+  * Bump Standards-Version to 4.1.3.
+    * Use https in Format field in d/copyright.
+  * Bump compat to 11.
+  * Migrate from alioth to salsa.
+    * Update maintainer email to debian-fonts@lists.debian.org.
+    * Update Vcs-* fields to salsa.debian.org.
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Sun, 11 Mar 2018 22:39:57 +0800
+
+fonts-noto-cjk (1:20170601+repack1-1) unstable; urgency=medium
+
+  * Use git snapshot for Noto Serif CJK 1.001  (Closes: #872802, #872833).
+  * Suggest fonts-noto-cjk-extra in fonts-noto-cjk (Closes: #873471).
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Thu, 31 Aug 2017 22:34:40 +0800
+
+fonts-noto-cjk (1:1.004+repack3-2) unstable; urgency=medium
+
+  * Split package to fonts-noto-cjk for regular and bold weights, and
+    fonts-noto-cjk-extra for all other weights (Closes: #862276).
+  * Bump compat to 10.
+  * Bump Standards-Version to 4.0.0.
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Tue, 20 Jun 2017 13:08:47 +0800
+
+fonts-noto-cjk (1:1.004+repack3-1) unstable; urgency=medium
+
+  * Merge back to unstable.
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Sat, 17 Jun 2017 21:44:13 +0800
+
+fonts-noto-cjk (1:1.004+repack3-1~exp1) experimental; urgency=medium
+
+  * Add Noto Serif CJK.
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Tue, 04 Apr 2017 11:09:14 +0800
+
+fonts-noto-cjk (1:1.004+repack2-2) unstable; urgency=medium
+
+  * Add 70-fonts-noto-cjk.conf to select properly font based on lang.
+    (Closes: #854772)
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Mon, 13 Feb 2017 22:40:52 +0800
+
+fonts-noto-cjk (1:1.004+repack2-1) unstable; urgency=medium
+
+  * Repack with seven OTC fonts instead of one Super OTC font to fix display
+    problem in chromium. (Closes: #823374)
+    Thanks to Gunnar Hjalmarsson.
+  * Bump Standards-Version to 3.6.8.
+  * Update Vcs-* fields.
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Wed, 04 May 2016 22:29:52 +0800
+
+fonts-noto-cjk (1:1.004+repack1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Split fonts-noto-cjk from fonts-noto.
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Sun, 22 Nov 2015 02:32:20 +0800

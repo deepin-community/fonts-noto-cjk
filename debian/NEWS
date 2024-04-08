@@ -1,5 +1,6 @@
-fonts-noto-cjk (1:20201206.1-deepin) stable; urgency=medium
+fonts-noto-cjk (1:1.004+repack3-2) unstable; urgency=medium
 
-  * ['Rebuild  against by  current gcc 11.2']
+  Split package to fonts-noto-cjk for regular and bold weights, and
+  fonts-noto-cjk-extra for all other weights.
 
- -- Deepin Packages Builder <packages@deepin.org>  Thu, 11 Aug 2022 21:47:32 +0800
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Tue, 20 Jun 2017 13:08:47 +0800

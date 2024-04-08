@@ -1,7 +1,12 @@
-NotoSansCJK-Bold.ttc /usr/share/fonts/opentype/noto/
-NotoSansCJK-Regular.ttc /usr/share/fonts/opentype/noto/
-NotoSerifCJK-Bold.ttc /usr/share/fonts/opentype/noto/
-NotoSerifCJK-Regular.ttc /usr/share/fonts/opentype/noto/
+#!/usr/bin/dh-exec
+Sans/OTC/NotoSansCJK-Bold.ttc /usr/share/fonts/opentype/noto/
+Sans/OTC/NotoSansCJK-Regular.ttc /usr/share/fonts/opentype/noto/
+Serif/OTC/NotoSerifCJK-Bold.ttc /usr/share/fonts/opentype/noto/
+Serif/OTC/NotoSerifCJK-Regular.ttc /usr/share/fonts/opentype/noto/
 
-NEWS.md /usr/share/doc/fonts-noto-cjk/
+Sans/HISTORY.md => /usr/share/doc/fonts-noto-cjk/HISTORY-Sans.md
+Sans/NEWS.md => /usr/share/doc/fonts-noto-cjk/NEWS-Sans.md
+Serif/HISTORY.md => /usr/share/doc/fonts-noto-cjk/HISTORY-Serif.md
+Serif/NEWS.md => /usr/share/doc/fonts-noto-cjk/NEWS-Serif.md
+
 debian/70-fonts-noto-cjk.conf usr/share/fontconfig/conf.avail/
