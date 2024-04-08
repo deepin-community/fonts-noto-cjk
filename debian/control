@@ -2,13 +2,14 @@ Source: fonts-noto-cjk
 Priority: optional
 Section: fonts
 Build-Depends: debhelper-compat (= 13),
-Maintainer: Deepin Developer <deepin-dev@deepin.org>
-Uploaders: Deepin Packages Builder <packages@deepin.org>
-Standards-Version: 4.5.1
+               dh-exec,
+Maintainer: Debian Fonts Team <debian-fonts@lists.debian.org>
+Uploaders: ChangZhuo Chen (陳昌倬) <czchen@debian.org>
+Standards-Version: 4.6.2
 Rules-Requires-Root: no
-Homepage: https://github.com/googlefonts/noto-cjk
-#Vcs-Git
-#Vcs-Browser
+Homepage: https://github.com/notofonts/noto-cjk
+Vcs-Git: https://salsa.debian.org/fonts-team/fonts-noto-cjk.git
+Vcs-Browser: https://salsa.debian.org/fonts-team/fonts-noto-cjk
 
 Package: fonts-noto-cjk
 Architecture: all

@@ -5,9 +5,5 @@ In upstream GitHub release [1], all font formats are in single release tarball.
 Since Debian only needs NotoSansCJK.ttc (all-in-one CJK super OTC font), the
 repack tarball strips all other font files.
 
-You can use the following command to get the repack tarball:
-
-    debian/rules get-orig-source
-
-[0] http://www.google.com/get/noto/help/cjk/
-[1] https://github.com/googlei18n/noto-cjk/releases
+[0] https://fonts.google.com/noto/use
+[1] https://github.com/notofonts/noto-cjk/releases
