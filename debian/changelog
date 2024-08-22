@@ -1,3 +1,9 @@
+fonts-noto-cjk (1:20240730+repack1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- ChangZhuo Chen (陳昌倬) <czchen@debian.org>  Sun, 11 Aug 2024 01:48:52 +0800
+
 fonts-noto-cjk (1:20230817+repack1-3) unstable; urgency=medium
 
   [ Boyuan Yang ]
